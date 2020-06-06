@@ -1,3 +1,4 @@
+// function for Search Button
 function jobSearch(){
     var xhr = new XMLHttpRequest()
     var description = document.getElementById('description').value
@@ -17,15 +18,20 @@ function jobSearch(){
     xhr.send()
     xhr.onload = function(){
         var data = JSON.parse(this.response)
-        // console.log(data.length)
-        console.log(data)
+        // console.log(data)
         displayDetail(data)
     }
     
+    // function to append details 
     function displayDetail(data){
-        var dummy = document.getElementById('dummy')
-        dummy.remove()
         var res = document.getElementById("res")
+        var dummy = document.getElementById('dummy')
+        if(dummy == null){
+            res.innerHTML = ''
+        }
+        else{
+            dummy.remove()
+        }
         res.innerHTML = ""
 
         var count = data.length 
@@ -35,7 +41,6 @@ function jobSearch(){
         total.style.marginLeft = "20%"
         total.style.marginBottom= "10px"
 
-        // res.append(total)
         var ul = document.createElement('ul')
         ul.style.listStyle = "none"
 
@@ -60,12 +65,14 @@ function jobSearch(){
             location.innerText = data[i].location
             location.style.margin = "5px"
 
-            li.append(title, compan, location)
+            var a = document.createElement('a')
+            a.href= "https://jobs.github.com/positions/" + data[i].id
+            a.target= "blank"
+            
+            a.append(title)
+
+            li.append(a, compan, location)
             ul.append(li)
-            // var date1= new date(data[1].created_at) 
-            // var date2= new date(data[2].created_at)
-            // var difference = Math.abs(date1.valueOf()-date2.valueOf())
-            // console.log(difference)
         }
         res.append(total, ul)
     }

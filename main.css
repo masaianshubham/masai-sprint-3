@@ -2,7 +2,10 @@
 * {
     margin: 0px;
 }
-    #top {
+h4{
+    color: rgb(25, 109, 187);
+}
+#top {
     margin: 0px;
     /* height: 600px; */
     background-color: rgb(236, 236, 236);
@@ -40,7 +43,7 @@
     margin: 20px 20%;
     background-color: white;
     border: 1px solid gray;
-    width: 62.5%;
+    width: 62.2%;
     padding: 5px;
 }
 #dummy ul {
@@ -51,8 +54,9 @@
     margin: 5px;
 }
 #dummy a {
-    color: rgb(44, 143, 236);
+    color: rgb(33, 117, 196);
     font-weight: bold;
+    text-decoration: none;
 }
 #head a{
     color: white;
@@ -63,7 +67,18 @@ button {
     color: white;
     width: 90px;
     height: 25px;
+    border: none;
+    border-radius: 6px;
 }
 button:hover {
     background-color: rgb(44, 143, 236);
+}
+#dummy a:hover {
+    text-decoration: underline;
+}
+#res a {
+    text-decoration: none;
+}
+#res a:hover {
+    text-decoration: underline;
 }
