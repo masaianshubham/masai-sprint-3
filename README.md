@@ -1,2 +1,13 @@
-# masai-sprint-3
-Github Jobs API project using HTML, CSS, Javascript
+# Project Title
+
+Github Jobs API
+
+## Language Used
+
+* HTML
+* CSS
+* Javascript
+
+## Developed By
+
+* **Shubham Kumar**
