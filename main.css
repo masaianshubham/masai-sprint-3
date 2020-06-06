@@ -19,10 +19,51 @@
 }
 #head {
     text-align: center;
-    background-color: rgb(48, 148, 241);
+    background-color: rgb(13, 100, 180);
     margin-top: 0px;
+    padding: 10px;
 }
 #head h1 {
     margin: 0px;
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#footer {
+    background-color: rgb(202, 202, 202);
+    height: 30px;
+    color: grey;
+    text-align: center;
+    padding: 10px;
+}
+
+#dummy {
+    margin: 20px 20%;
+    background-color: white;
+    border: 1px solid gray;
+    width: 62.5%;
+    padding: 5px;
+}
+#dummy ul {
+    padding: 0px;
+}
+#dummy li {
+    display: inline-block;
+    margin: 5px;
+}
+#dummy a {
+    color: rgb(44, 143, 236);
+    font-weight: bold;
+}
+#head a{
+    color: white;
+    text-decoration: none;
+}
+button {
+    background-color: rgb(90, 93, 114);
+    color: white;
+    width: 90px;
+    height: 25px;
+}
+button:hover {
+    background-color: rgb(44, 143, 236);
 }
