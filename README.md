@@ -8,6 +8,8 @@ Github Jobs API
 * CSS
 * Javascript
 
+![](projectScreenshot.jpg)
+
 ## Developed By
 
 * **Shubham Kumar**
